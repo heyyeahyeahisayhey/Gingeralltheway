@@ -1,0 +1,254 @@
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+/* General Layout Styles */
+body {
+    background-color: #EFEDEA;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0; /* Use 0 instead of 200 */
+    padding: 0; /* Use 0 instead of 120 */
+    color: #8C480D;
+}
+#preparation {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe {
+    background-color: var(--main-bg-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Recipe section details styles */
+.recipe-section {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Ingredients list styles */
+.ingredients-list, .instructions-list {
+    margin: 0;
+    padding: 0;
+}
+
+.ingredient, .instruction {
+    margin-bottom: 5px;
+    color: var(--main-text-color);
+}
+
+.ingredient::before, .instruction::before {
+    content: '\2022'; 
+    color: var(--accent-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Button styles */
+button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
+}
+
+ul, ol {
+    margin: 15;
+    padding: 20;
+}
+
+li {
+    margin-bottom: 5px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #416CA6;
+    padding: 10px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #C22132;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8C480D;
+}
+
+/* Slideshow Styles */
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.numbertext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 8px 12px;
+    background-color: black;
+}
+/* Shopping Cart Styles */
+#shopping-cart {
+    background-color: #EFEDEA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+    color: #8C480D;
+}
+
+#cart-items button {
+    background-color: #C22132;
+    color: #EFEDEA;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#cart-items button:hover {
+    background-color: #8C480D;
+    color: #EFEDEA;
+}
